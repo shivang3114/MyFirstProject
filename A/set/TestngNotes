@@ -1,0 +1,196 @@
+TestNG---Its a unit testing framework and it also called as TDD(test driven development)framework
+TDD-Test driven framework
+Purpose-----design test cases in a systematic way.
+
+TestNG---open source,available in the form of jar files.
+It is also called as --Java unit testing framework.
+Both JUnit and TestNG are used only on JAVA. For each language having own framework.
+
+
+Features:
+
+It will generate good "HTML reports"
+--different annotations
+--prioroties/sequence
+--dependency
+--grouping
+--data provider (most important feature)
+
+Install TESTNG in Eclipse
+after installation good to go to write test cases.
+TestNG never needs main class.
+Never write main method inside the TESTNG
+
+What is annotations?
+Each and every annotations should start with "@"
+each and every annotation should associate with one method.
+
+TESTNG contains three sections/annotations
+1.Pre-conditions
+2.TEST CASES
+3.Post Conditions
+
+Note-execution sequence of each and every annotations that will be different.
+
+How many test cases in this SCRIPT?
+If one @TEST is available in script it means only one test cases in present 
+@Test shows how many test cases available in the script.
+
+Execution Pairs in TestNG(if 3 test cases is available then 3 pairs will create and each and
+every pair would start only from----@beforeMethod
+@BeforeMethod
+@Test
+@AfterMethod
+
+How many different annotations available in TESTNG?
+There are different annotations 
+
+1.Pre-requite annotations.
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+
+2.Test case annotaions.
+@Test
+
+3.Post conditions annotaions.
+@AfterMethod
+@AfterClass
+@AfterTest
+@AfterSuite
+
+Note--In real time we are not using all these annotations only few will use.
+Note--While creating class in testNG framework use "TEST" keyword for good practice.
+e.g. GoogleTest
+     AmazonSearchTest
+     
+Note: to create a framework you can use @beforeMethod,@Test, and @afterMethod
+note:Test cases are always independent.
+
+How you will define the sequencing of test cases?
+We have one keyword "Priority" keyword immidately after @test write the priority.
+
+                How to find the report in TESTNG basic report or index.html project?
+After the execution every time you have to refresh your project then test output folder
+will be created inside the test output folder this "index.html" will be available and
+automatically it will be created.
+Right click on it
+Go to properties
+Copy the location(this location will be somewhere in your workspace or in your machine or
+c-drive ,d drive) 
+Copy this location
+Paste in your browser or URL tab.              
+
+                     groups(keyword)
+   we can see the test report according to the group vice.
+  e.g groups="links"
+      groups="buttons"
+      groups="images"
+      groups="dropdowns"
+      groups="mousemoveractions classes"
+      groups="frames"   
+how you will define grouping in TESTNG?
+With the help of "groups" keyword.
+
+
+                   dependsOnMethods(keyword)
+some test case is dependent on other test case.
+for.eg in "Login" test rest of the functionality is dependent if its failed no need to
+test rest things and it wont'allow to test next test.
+
+e.g. My first test case "login" got failed and if it is failed and we know that next
+test case is totally dependent on first test case then TESTNG will skip next test case
+because it is dependent on "LOGIN" test case.
+And in result it will show 1 test case failure and 1 skip
+if 5 test case depends on "Login" test case so after execution it will show as
+TESTRUN=6
+FAILED=1
+SKIPS=5
+
+E.G2---If independent test case has been passed and dependent test case has been failed
+it TESTNG won't skip any test case to run just consider as failure test case and same 
+will populate in file.
+
+                                invocationCount
+to execute n number of times to use this keyword  .
+e.g. @Test(invocationCount=10) 
+                                 
+                            invocationTimeOut=2
+ if infinite loop in you code so it will help to resolve this issue but never use this
+ type of exception in your framework it won't good.
+ Always break the loop.
+ 
+Question--How you will handle exceptions in TESTNG?what is a keyword
+Answer--We have "expectedExceptions" keyword
+                      
+Question--If you  want to handle exception without Try/Catch block how u will handle?
+we have expectedExceptions keyword we can use in testNG to handle this.
+
+NOTE:Although we are not using execption we can keep as failure the test case but this
+is a feature that we should know.
+
+  //Validation is very important in TESTNG
+  Assert.assertEquals(title,"Google","title is matched")
+
+ how to run all the classes in one shot in TESTNG?
+ We can create one XML file inside the SRC folder and enter all the class name inside the
+ XML file and it will run.
+ We have default format that we can use.
+ 
+ How to create
+ Right click on SRC folder
+ Go to the other
+ Select file
+ Enter name as testng.xml   (this is a name 99% using this name this is a xml template.
+ Tags will be available
+ INSIDE THE <Classes> tag mention class name and run this 
+ It will run all suite the testng
+ 
+ 
+             @Parameters in TestNG:
+
+What is @Parameters annotation in TESTNG?
+ans: I dont want to hardcode my value and it is not a good practise to enter in script
+so we will add details in "TESTNG.XML" FILE
+
+                                      TESTNG.XML FILE
+WE have default format that we can use to create file
+1.First add the testng.xml file
+2.Add class name  and in class name add Package name also
+e.g. class_name=login
+     Package_name=com.TestApplication
+ <class_name="com.TestApplication.login"/>  
+ 
+ How to add parameters in xml.file?
+ <parameters> tag  name value />
+ 
+ e.g. <parameter name="environment" value="QA" />    (which parameter u want to execute)
+   <parameter name="browser" value="chrome"/>      (which browser u want to execute)
+   <parameter name="url" value="https://www.freecrm.com"/>  
+   <parameter name="username"  value="shivpath"/>
+   <parameter name="password"  value="Metnet1993#" />
+   
+   these are called ENVIRONEMT VARIABLES these things is generic or common things
+   or called as configuration parameters.
+   
+How to pass parameter from testng.xml to TestCases?
+How to configure testing.xml file with <Parameter> tag?
+Run your test cases with testng.xml file?             
+             
+    1.Data Driver:from  different resources
+        a. Excel file
+        b. Properties file----environment variable and test data
+        c. testng.xml-------environment variable
+        d. XML files----environment variable
+        e. JSON files---environment variable
+        f. database
+
+
+                       @dataprovider
+ 
+
+
+
+
+

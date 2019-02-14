@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sample test Suite]">
+  <test thread-count="5" name="Sample test(failed)">
+    <parameter name="environment" value="QA"/>
+    <parameter name="password" value="Metnet1993#"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.freecrm.com"/>
+    <parameter name="username" value="shivpath"/>
+    <classes>
+      <class name="com.Parameters.ParametersTest">
+        <methods>
+          <include name="CRMLoginTest"/>
+        </methods>
+      </class> <!-- com.Parameters.ParametersTest -->
+    </classes>
+  </test> <!-- Sample test(failed) -->
+</suite> <!-- Failed suite [Sample test Suite] -->
