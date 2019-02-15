@@ -1,0 +1,5 @@
+JavaScriptExecutor?
+
+1. Higlight the webelement.
+2.Create a border (circle over the element)
+3.Take screenshot

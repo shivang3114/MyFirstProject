@@ -1,0 +1,13 @@
+Interview Question?
+Give me the basic daiagram of HTML DOM?
+Need to look diagram on google.
+
+
+
+What is HTML DOM(DOCUMENT Object Model) ??
+HTML-For HMTL document
+XML-For XML document
+CORE DOM-For other type of documents.
+
+1.DOM is an API Inetrface provided by browser.
+2.When a web page is loaded, browser creates a DOM if the page.

@@ -1,0 +1,24 @@
+What is GITHUB?
+GITHUB is a website which provides some space to the GIT tool services
+1.WIKI
+2.Task  management
+3.Bug tracking
+4.Hosting services for GIT Repo
+
+Who developed this GIT concept?
+GIT concept is developed by founder of linux Mr LINUS TORVALDS.
+
+How it works?
+GIT  is a tool
+One admin having admin which creates one repository in GITHUB (e.g. capgemini automation scripts repository) .this repository is called GIT
+repositury and this repository hosted in GITHUB.
+
+e.g. Now we have multiple QA automation engineer and they all working on differnet2 scripts(e.g. naveen will pusht the code and satyam 
+will push the code in repository.
+
+BRANCHES:
+Master
+Feature branch
+
+Check in- means push the code from repository.
+Check out-Pull the code from repository.

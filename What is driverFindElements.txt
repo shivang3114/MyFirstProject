@@ -1,0 +1,25 @@
+
+//get the count of links on the page
+
+how many links are there?
+List<WebElement> linkList=driver.findElements(By.tagName("a"));
+System.out.println("number of links is=" +linkList.size());
+
+how many buttons are there?
+List<WebElement> linkList1=driver.findElements(By.tagName("button"));
+System.out.println("number of links is=" +linkList1.size());
+
+how many input field are there ?
+List<WebElement> linkList2=driver.findElements(By.tagName("input"));
+System.out.println("number of links is=" +linkList2.size());
+
+
+
+//get the test of each link on the page
+
+     
+           for(int i=0; i<linkList.size(); i++){
+        	   
+        	   String linkText=linkList.get(i).getText();
+        	   System.out.println(linkText);
+           }

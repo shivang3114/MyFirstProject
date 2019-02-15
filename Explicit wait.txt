@@ -1,0 +1,4 @@
+EXPLICITLY WAIT:
+it is for specific element we can put for any element.
+
+e.g. open a one page and it is fully loaded but some elements is not showing on webpage.So we can put "explicitly wait" for the specific element. 

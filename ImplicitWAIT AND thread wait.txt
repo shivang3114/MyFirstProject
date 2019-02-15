@@ -1,0 +1,30 @@
+PAGELOADTIMEOUT?
+This is a dynamic wait --we are giving request for selenium wait at least 40 seconds then perform action .Sometime page is so heavy it willl take more than 40 second time to load then selenium will give error.
+But this wait is so dynamic in nature if page is loaded within 5 seconds it will ignore rest "35" second and this will perform action.
+
+driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
+
+What is implicitwait and where it would use?
+It is applicable for all the elements available on the webpage.
+e.g Page is fully loaded but some element is still not available or images is not visible 
+Once a page is fully loadede we are telling selenium wait for next 30 seconds to perform action on all webelements.
+But this wait is so dynamic in nature if page is loaded within 10 seconds it will ignore rest "20" second and this will perform action.
+
+THIS IS ONLY ONE TIME ACTITVITY
+
+Thread.Sleep()
+Script will be stopped 
+we should avoid thread.sleep in script.
+
+
+
+BEFORE STARTING PERFORMING ON ANY WEPAGE WRITE ALWAYS BELOW LINES
+
+            driver.get("http://jqueryui.com/droppable/");
+	    driver.manage().window().maximize();
+	    driver.manage().deleteAllCookies();
+	    
+	    //dynamic wait
+	    driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);//this will
+	    driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+	}

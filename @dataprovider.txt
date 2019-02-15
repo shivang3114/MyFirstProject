@@ -1,0 +1,122 @@
+Data Driver Framework with TestNG-data provider
+
+How to use @dataprovider?
+1.First we will create a data in excel
+2.Create one data provider class
+3.Call the data provider in @Test
+
+
+
+Application--page--differentfields--fill all these fields with different testdata.
+
+@Test("dataprovider="getData")
+public void TestLogin(username,password){
+
+}
+
+@dataprovider
+getData(){
+
+data1------student_name=
+data2-----customer_name=
+data3------xyz
+
+
+
+}
+
+
+excel----testdata.xslx
+
+data1---username,pwd
+data2---username1,pwd1
+data3
+data4
+
+
+
+
+9748942---LIFE CLAIM
+9748943--NON-LIFE CLAIM
+
+
+INTRODUGIN 
+1.Intercative game
+2.
+
+
+
+Hi Team, 
+
+1. Can you please undo the GL in Portugal TPT3 for January 2019. 
+2. Can you please undo the RI GL in Portugal TPT3 for January 2019. 
+
+Thanks
+Shivang
+
+
+
+
+
+datadrivenTestdata.xlsx
+
+PT- Acceptation configuration Interfaces
+SE Acceptation configuration Interfaces
+TK- Extract 2/cash matching
+
+
+
+
+PUT SOME SPECIFIC POLICY
+
+
+eXTRACT2 NEEDS TO VALIDATE AGAIN FOR PORTUGAL
+ONE CLIAM
+ONE CANCELLATION51
+
+
+Hi Trevor,
+
+GBRI-200 Portugal(Category C schemes to be marked with the negative webXL interface ID)
+Testing is in progress.
+Right now I am setting up the sceanrios to generate extract2 file.
+
+GBRI-228 updated comment assigned back to Fiona McGonnell
+
+938670
+
+
+shivang.pathak.ext@partners.axa
+
+
+Turkey-WEBXL FILE Generation error message
+"SECTION number missing for 1 row(s) for interface id2
+
+Metnet1999#
+
+greece and NORWAY HAVE TESTDATA
+rioghnach.tobin@partners.axa
+
+
+PERU BUG--GBRI-230
+
+
+Hi Team, 
+
+1. Can you please run the GL in Turkey TPT3 for January 2019. 
+2. Can you please run the RI GL in Turkey TPT3 for January 2019. 
+
+Regards
+
+
+ 40488057   
+
+
+
+
+
+
+
+
+
+

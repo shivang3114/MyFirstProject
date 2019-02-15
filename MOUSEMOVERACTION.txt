@@ -1,0 +1,9 @@
+	MOUSE MOVEMENT ACTION
+
+Action class needs to use after every action method build().perform() needs to use.
+
+
+   Actions action=new Actions(driver);
+	    action.moveToElement(driver.findElement(By.xpath("//a[text()='Products']"))).build().perform();
+	    Thread.sleep(3000);
+	    driver.findElement(By.linkText("Insurance")).click();

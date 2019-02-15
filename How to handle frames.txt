@@ -1,0 +1,26 @@
+HOW TO FIND A FRAME?
+if <iframe> tag is available on webpage source then frame will be available
+
+What is frame in selenium?
+Answer-Herarchy in webBrowser
+1.Browser
+2.Page
+3.Frame-It is also a one time of webelemnet and frame also contains webelement (e.g. links,button,images etc)
+    Proprties of frame
+                   a. Index=0,1,2,3  (if number of frame available in webpage)
+                   b. Name           (with the help of name also we can find frame on webage)
+
+right click and see is frame available
+Right click and see the page socurce if frame will be availble.
+Multiple frame will be available.
+
+
+question1.  how you can find frame?
+WITH THE HELP OF FRAME NAME AND FRAME INTEGER MEANS NUMBER.
+
+Note:If your xpath is correct still selenium is not able to recognise the element it means frame is there check frame and
+driver.switchto().frame("leftpanel" or "rightpanel" or "0" or "1" etc)
+
+
+
+

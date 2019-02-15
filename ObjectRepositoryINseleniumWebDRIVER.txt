@@ -1,0 +1,104 @@
+How to create a file i selenium?
+Right Click
+Click on New
+Click Other
+Select general one option will be there "FILE"
+Enter file name with extension "properties"
+e.g. config.properties.
+
+
+It is used to define the data.
+It can be used for environmetn variable also.
+It can be used to store xyz information also.
+
+
+EXAMPLE:
+
+name=sonu        (name is called as "KEY" and sonu is called as "VALUE"---------so it is called as key value concept)
+age=25            (age is "KEY" and 25 is "VALUE")
+
+URL--https://www.google.com       --------------these thing is constant through out the program so these things we can define in this config.properties file.
+
+BROWSER--CHROME
+
+Question:How to read this type of file in selenium?
+Ans:
+
+
+
+package set;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ReadPropertiesFile {
+
+	public static void main(String[] args) throws IOException, InterruptedException {
+		
+		WebDriver driver;
+		
+	//first we create the object of proprties class
+	//now this class is already available in java so we can import
+	//now we have another class "FIS" this is also available in java so we can import from
+    //--package but inside that we need to give the path of the file which file wants to read
+	//how to find a path--JUST RIGHT CLICK ON config.properties and go the the proprty
+		//--will find a path and paste it here
+//file input stream class will connect to this proprties file. it will create input stream between java code and config.proprties file once the connection will happen then we need to load the file.		
+	//now we have to load these file by using properties and give which object you want to load.
+      //NOTE-now we can call to the properties file and "KEY" name should be same what we have given in file
+//we can COMMENT proprties file value with the help of # make a comment.
+
+
+
+country of risk
+
+
+
+
+
+
+		
+		
+		Properties prop=new Properties();
+		FileInputStream ip= new FileInputStream("C://Users//shivpath//workspace//A//set//config.properties");
+		
+		prop.load(ip);
+		
+		System.out.println(prop.getProperty("name"));
+		
+		String ag=prop.getProperty("age");
+		System.out.println(ag);
+		
+		String url=prop.getProperty("URL");
+		System.out.println(url);
+		
+		String browsername=prop.getProperty("Browser");
+		System.out.println(browsername);
+		
+		String username=prop.getProperty("username");
+		System.out.println("username");
+		
+		String password=prop.getProperty("pwd");
+		System.out.println("password");
+		
+		
+		if(browsername.equals("chrome"))  
+		{
+			System.setProperty("webdriver.chrome.driver","C:\\data backup\\Selenium\\chromedriver.exe");
+		    driver=new ChromeDriver();
+		     }
+		
+	
+	         
+	}
+		
+		}
+	
+	
+
+	

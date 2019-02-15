@@ -1,0 +1,56 @@
+Dynamic xpath:
+
+ABSOLUTE XPATH:NOT RECOMMENDED
+Performance issue
+Not reliable
+It can be change anytime in future.
+Script will be very slow
+
+//*[@id="tsf"]/div[2]/div/div[1]/div/div[1]/input
+
+
+It is very fast
+syntax is very simple
+its unique
+Its relaible
+//dynamic id;-----it is not constant
+
+//id=test_123
+//id=test_456
+//id=test_789
+
+Note-To overcome this problem "contains" we can use to reduce this problem.
+
+XPATH WHICH IS HAVING "CONTAINS":        "//tag[contains(@id,test_123)]"
+
+How contains works:
+It identifies from repeated value e.g. (test_) and test_ .
+
+
+e.g.  "//input[contains(@id,test_123)]")).sendKeys();
+
+
+starts-with
+  //id=test-test_7890_test
+            //test_789
+                 //test_987
+driver.findElement(By.xpath("//input[starts-with(@class,'gLFyf gsfi')]")).sendKeys("java");
+
+//id=1234_test_t
+	    //id=23456_test_t
+	    //id=43256_test_t
+
+ends-with
+//id=1234_test_t
+    //id=23456_test_t
+	 //id=43256_test_t
+this is a pattern in xpath    (number and ends with repeated data)
+
+
+//input[ends-with(@id,test_t)]))
+
+                       for links
+
+  //a[contains(text(),'my account')]
+	    
+	    //a[text()='my account']

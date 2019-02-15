@@ -1,0 +1,52 @@
+Always look for a unique xpath never go with duplicate data
+//tagname[@ID OR NAME LOCATOR='value']
+//input[@name='username']
+
+
+
+
+
+//*[@id="gb"]/div/div[1]/div[1]/a
+
+
+//tagname[@tag='value']
+
+//input[@name='username']--------------------------------//*[@id="username"]
+
+//input[@id='username']
+
+
+//input[@name='pwd']	
+
+LINKS>>>>>>it will start with a always and a shows how many links are there
+
+//tagname[textfunction='value']
+
+//a[text()='Features']-----------without contains
+              OR
+//a[contains(text(),'Features')]-------------RECOMMEND	
+
+Note-if we use contains and multiple xpath will show then will go with only 1st one
+
+//a[text()='Alerts']
+
+BUTTON>>>>>>>>>>>
+
+//button[@button='button' and @class='Sign Up']
+BY USING CONTAINS
+//button[contains(text,'Sign Up')]   >>>>>>>>>we can either of them
+
+MULTIPLE XPATH--
+//a[@class='button']//a[conatins(text(),'button')]	
+
+--------------------------------------------------------------------
+
+child>parent>sibling>child (this is the best way to find xpath)
+
+e.g.
+//a[text()='test2test2']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']
+
+1st brother-preceding-sibling
+2nd brother,3rd brother,4th brother-forward-sibling
+
+
