@@ -1,0 +1,30 @@
+What is the meaning of loops?
+Answer:to avoid repetation of statement
+
+1.while loop:
+      while(condition)
+{
+   statement(s);
+}
+
+
+disadvantage of while loop:
+if we dont give incremental part while loop runs infinite time.(loop won't break)
+
+   int i=0;
+while(i<10){
+
+System.out.println(i);
+}
+
+FOR LOOP
+ //intilization, Conditional,  incremanetal or decremental
+
+for(int j=1; j<=10; j++) {         
+			
+			
+System.out.println(j);
+			
+
+
+

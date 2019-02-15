@@ -1,0 +1,33 @@
+fINAL-
+1.keyword is used define the constant values.
+2.To prevent inheritance we use final keyword
+3.to prevent method over-riding 
+
+
+finally
+1.it is a reserved keyword
+2.this keyword always use with try and catch block
+3.it will give u a quarranty what ever you have written after the try catch block it will execute.
+4.before the control back to the orign it will be executed. The code has been written it should be execute always.
+5.finally will be executed always.
+
+
+syntax
+   finally
+        {
+           System.out.println();
+               }
+
+
+
+finalize: it is used to clean up the memory
+
+purpose:
+just before the garbage collector automatically finalize method can be called just to clean up processing of the object.
+
+1.finalize is a method its not keyword
+2.No need to call automatically be called 
+3.if there is no refrence available in the memory immediatly garabe collector will be called or automatically will destroy all the objects
+to clean up some memory.
+4.We can call garbage collector manually
+System.gc();

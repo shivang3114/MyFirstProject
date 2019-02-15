@@ -1,0 +1,16 @@
+//Polymorphism--one to many  (many methods)
+
+   //static polymorphism----compile time polymorphism
+		
+		//Why complie time polymorphism?
+		 //Ans-At the time of compilation java will decide which mehod I need to call
+
+obj.start----this is over-ridden method
+
+
+
+Dynamic Polymorphism/Runtime
+
+child class object can be referred by parent class refrence variable---dynamic polymorphism/ run time polymorphism
+over-riddden methods and parent class methods only and only can access with run time polymorphism/ dynamic polymorphism
+	    

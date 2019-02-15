@@ -1,0 +1,22 @@
+JAVA BASICS:
+
+/primitive data types-----int,double,char,boolean
+//after declaration only java can print the values.Because without declaration java is unknown the data and variable.
+//Yellow lines is a warning---e.g you have declare a variable but not using consuming memory.
+
+//2.double-to store floating values use double data type keyword.
+//3.charcter---it should be single digit value and enclosed always in ''  single quotes
+Note:Integer we can store in double but "double" we cant store in INTEGER.
+
+
+//4.boolean
+		//it will always return below values or either 0 or 1 also sometime.
+		//Ques:true and false in value or keyword in JAVA?
+		//ans:yes these are values but already avilable in java.
+
+
+//5. String----is a class not a data type but we can use as as data type to store string values.
+
+
+
+		  

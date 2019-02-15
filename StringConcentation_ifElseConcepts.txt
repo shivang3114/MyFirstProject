@@ -1,0 +1,39 @@
+
+//execution always starts from left to right.
+//+ : is concatenation operator.
+//println- is used to print on the console with a new line
+//print-  is used to print on the console.
+
+
+
+False &  False=False
+True &  True= True
+False & True=False
+
+
+//main method is important to execute the program
+		// if -  keyword (starts with small letter)
+		// if and else always contains boolean conditions means true or false.
+		// this is also called comparsion operator also.
+		//  =   is assignment operator
+		//  ==   is comparison operator
+
+
+ //nested if conditions   
+              
+            		  
+              if(l>m &l>k ) {
+            	  
+            	  System.out.println("l is the greatest number");
+            	  
+           }else if(m>k & m>l){
+            	  System.out.println("m is the greatest number");
+            	  }
+           else if(k>s & k>m){
+        	   System.out.println("k is the greatest number");
+           }
+              
+           else {
+        	   
+        	   System.out.println("s is the king");
+        	   	

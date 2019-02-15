@@ -1,0 +1,60 @@
+What is Inheritance?
+inherit some properties from parents but parent cannot 
+
+e.g parent class cannot access child class methods.
+
+NOTE--Granparent--parent--child
+child class can access granparent methods also if parent has extends granparant methods.
+
+
+hierarchy of parent and child classes
+
+Parent class/Super class
+Child class/sub-class
+
+science
+physics
+engineering
+mechanical
+vechile
+car
+bmw extends car
+
+before -child class
+after-parent class
+
+marutie
+
+Whenevr method is common in parent and child class then prefrence always given to child class.---in this condition preference will given to child class
+
+
+when same method is present in parent class as well as child class with same name and same number of arguments is called method over-riding.
+
+
+
+package inheritance.java;
+
+public class TestCar {
+
+	
+	
+	public static void main(String[]args) {
+	
+	//call the car and bmw class
+	//as these are non-static methods we can call with refrence to the object
+	
+		BMW obj= new BMW();
+		//this method is available in parent and child class both in this condition jvm will give preference for the child class always because it says
+		  // you have your own method dont inherit this class and it will execute your own class.No need to over-riddden this class
+		obj.start();     
+		obj.start();
+		obj.stop();           //parent class method
+		
+		obj.Speed();          //child class method
+	    obj.automaticGear();
+	    
+	}
+	
+	
+}	
+	
