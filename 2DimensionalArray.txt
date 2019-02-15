@@ -1,0 +1,127 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2D Array:
+
+
+it contains Rows and Columns   (e.g. matrix)
+if two square bracket is available then call as 2D array.
+
+
+how to get columns length?
+It totaly based on rows beacause every rows contains same column.
+
+x[].length= will get row count.
+x[0].lenght=will get column count.
+
+String a[][]=new String[3][4];
+	//	[][]a---both are same this is also correct
+
+
+//print all the values of 2d aRRAY: Use 2 for loops--one for row and other one for rows
+		//row=0,col=0 to 4
+		//row=1,col=0 to 4
+		//row=2,col=0 to 4
+		
+for(int row=0; row<a.length; row++){
+		 
+			for(int column=0; column<a[1].length; column++){
+				
+				System.out.println(a[row][column]);
+			}
+			
+System.out.println(a.length);  //this will give row length
+		System.out.println(a[1].length);  //this will give column length bcz this size depends on rows and each and every rows contains same columns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

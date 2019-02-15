@@ -1,0 +1,2 @@
+Why main method is void?
+We never write return inside the main method that's why its void(	//main method is void--never returns a value.)

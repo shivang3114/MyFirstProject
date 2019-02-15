@@ -1,0 +1,17 @@
+array-to store similar data type  values in a array varaible
+
+//one dimensional array	
+	//array is used to store similar data types values in one variable
+	//lowest bound/index=0
+	//upper bound/index=n-1(n is the size of array)
+		
+	//disadvantage of array:
+     //1. size is fixed--static array----to overcome this problem we use collection---Arraylist, HashTable---these things are called  dynamic array.
+	 //2.it stores only similar data types  (e.g int,etc)--to overcome this problem,we use Object array,
+		
+
+//to print all values of array  always use looping concepts.
+
+//Object array: (Object is a class-it is the most super class in Java)
+		//this is used to store mulitple type of data types.
+
