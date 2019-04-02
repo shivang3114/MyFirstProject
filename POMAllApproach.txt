@@ -1,0 +1,39 @@
+@FindBy(name="firstname")
+	WebElement username;
+	
+	@FindBy(name="lastname") 
+	WebElement lastname;
+	
+	@FindBy(name="u_0_u")  
+	WebElement mobileNo;
+	
+	//second approach is with the help of how
+	
+	@FindBy(how=How.ID,using="u_0_11") 
+	WebElement NewPassword;
+	
+	//How =it is a class
+	//id=it is a separate static varaible
+	//using= it is also a variable i.e String variable
+			
+
+
+By username=By.name("email");
+	
+	By password= By.name("pass");
+
+    By signButton=By.xpath("//*[@id=\"u_0_3\"]");
+
+
+    public LoginPage(WebDriver driver) {
+    	 
+    	 this.driver=driver;
+    	 
+     }
+	
+	
+     public void LoginPage(String user_ID, String Pwd) {
+    	 
+    	 driver.findElement(username).sendKeys(user_ID);
+    	 driver.findElement(password).sendKeys(Pwd);
+    	 driver.findElement(signButton).click();
